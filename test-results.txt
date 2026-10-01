@@ -1,0 +1,207 @@
+AI provider unavailable during hypothesis generation: connection refused (simulated Ollama outage)
+AI provider unavailable during tool selection: connection refused (simulated Ollama outage)
+AI provider unavailable during evidence interpretation: connection refused (simulated Ollama outage)
+Traceback (most recent call last):
+  File "C:\Users\samso\Documents\Codex\2026-10-01\files-mentioned-by-the-user-cypher\work\Cypher-master\Cypher-master\tests\_pytest_shim.py", line 89, in run_module
+    func(**kwargs)
+  File "C:\Users\samso\Documents\Codex\2026-10-01\files-mentioned-by-the-user-cypher\work\Cypher-master\Cypher-master\tests\test_artifact_recursion.py", line 41, in test_tool_producing_new_file_is_registered_as_discovered_artifact
+    if not _make_png(png_path):
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samso\Documents\Codex\2026-10-01\files-mentioned-by-the-user-cypher\work\Cypher-master\Cypher-master\tests\test_artifact_recursion.py", line 32, in _make_png
+    subprocess.run(
+  File "C:\Users\samso\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['convert', '-size', '8x8', 'gradient:red-blue', 'C:\\Users\\samso\\AppData\\Local\\Temp\\cypher_test_ky2w5pzo\\probe.png']' returned non-zero exit status 4.
+Traceback (most recent call last):
+  File "C:\Users\samso\Documents\Codex\2026-10-01\files-mentioned-by-the-user-cypher\work\Cypher-master\Cypher-master\tests\_pytest_shim.py", line 89, in run_module
+    func(**kwargs)
+  File "C:\Users\samso\Documents\Codex\2026-10-01\files-mentioned-by-the-user-cypher\work\Cypher-master\Cypher-master\tests\test_executor.py", line 22, in test_file_identify
+    result = executor.execute("file_identify", "originals/sample.txt")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samso\Documents\Codex\2026-10-01\files-mentioned-by-the-user-cypher\work\Cypher-master\Cypher-master\src\cypher\tools\executor.py", line 230, in execute
+    raise ToolValidationError(f"Tool '{tool_name}' is registered but not installed on this system.")
+cypher.tools.executor.ToolValidationError: Tool 'file_identify' is registered but not installed on this system.
+Traceback (most recent call last):
+  File "C:\Users\samso\Documents\Codex\2026-10-01\files-mentioned-by-the-user-cypher\work\Cypher-master\Cypher-master\tests\_pytest_shim.py", line 89, in run_module
+    func(**kwargs)
+  File "C:\Users\samso\Documents\Codex\2026-10-01\files-mentioned-by-the-user-cypher\work\Cypher-master\Cypher-master\tests\test_executor.py", line 60, in test_grep_pattern_finds_flag_shape
+    result = executor.execute(
+             ^^^^^^^^^^^^^^^^^
+  File "C:\Users\samso\Documents\Codex\2026-10-01\files-mentioned-by-the-user-cypher\work\Cypher-master\Cypher-master\src\cypher\tools\executor.py", line 230, in execute
+    raise ToolValidationError(f"Tool '{tool_name}' is registered but not installed on this system.")
+cypher.tools.executor.ToolValidationError: Tool 'grep_pattern' is registered but not installed on this system.
+Traceback (most recent call last):
+  File "C:\Users\samso\Documents\Codex\2026-10-01\files-mentioned-by-the-user-cypher\work\Cypher-master\Cypher-master\tests\_pytest_shim.py", line 89, in run_module
+    func(**kwargs)
+  File "C:\Users\samso\Documents\Codex\2026-10-01\files-mentioned-by-the-user-cypher\work\Cypher-master\Cypher-master\tests\test_final_pass_additions.py", line 22, in test_pattern_scan_flags_suspicious_symbols_and_flag_shape
+    result = executor.execute("suspicious_pattern_scan", "originals/probe.bin")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samso\Documents\Codex\2026-10-01\files-mentioned-by-the-user-cypher\work\Cypher-master\Cypher-master\src\cypher\tools\executor.py", line 230, in execute
+    raise ToolValidationError(f"Tool '{tool_name}' is registered but not installed on this system.")
+cypher.tools.executor.ToolValidationError: Tool 'suspicious_pattern_scan' is registered but not installed on this system.
+Traceback (most recent call last):
+  File "C:\Users\samso\Documents\Codex\2026-10-01\files-mentioned-by-the-user-cypher\work\Cypher-master\Cypher-master\tests\_pytest_shim.py", line 89, in run_module
+    func(**kwargs)
+  File "C:\Users\samso\Documents\Codex\2026-10-01\files-mentioned-by-the-user-cypher\work\Cypher-master\Cypher-master\tests\test_final_pass_additions.py", line 33, in test_pattern_scan_quiet_on_boring_binary
+    result = executor.execute("suspicious_pattern_scan", "originals/boring.bin")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samso\Documents\Codex\2026-10-01\files-mentioned-by-the-user-cypher\work\Cypher-master\Cypher-master\src\cypher\tools\executor.py", line 230, in execute
+    raise ToolValidationError(f"Tool '{tool_name}' is registered but not installed on this system.")
+cypher.tools.executor.ToolValidationError: Tool 'suspicious_pattern_scan' is registered but not installed on this system.
+Traceback (most recent call last):
+  File "C:\Users\samso\Documents\Codex\2026-10-01\files-mentioned-by-the-user-cypher\work\Cypher-master\Cypher-master\tests\_pytest_shim.py", line 89, in run_module
+    func(**kwargs)
+  File "C:\Users\samso\Documents\Codex\2026-10-01\files-mentioned-by-the-user-cypher\work\Cypher-master\Cypher-master\tests\test_final_pass_additions.py", line 67, in test_osint_corroboration_links_entity_seen_in_two_evidence_sources
+    assert len(osint_evidence) == 1
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+Traceback (most recent call last):
+  File "C:\Users\samso\Documents\Codex\2026-10-01\files-mentioned-by-the-user-cypher\work\Cypher-master\Cypher-master\tests\_pytest_shim.py", line 89, in run_module
+    func(**kwargs)
+  File "C:\Users\samso\Documents\Codex\2026-10-01\files-mentioned-by-the-user-cypher\work\Cypher-master\Cypher-master\tests\test_investigation_platform.py", line 165, in test_full_workflow_evidence_to_analysis_to_timeline_without_any_ai
+    assert result is not None
+           ^^^^^^^^^^^^^^^^^^
+AssertionError
+AI Analyst unavailable: simulated outage
+Traceback (most recent call last):
+  File "C:\Users\samso\Documents\Codex\2026-10-01\files-mentioned-by-the-user-cypher\work\Cypher-master\Cypher-master\tests\_pytest_shim.py", line 89, in run_module
+    func(**kwargs)
+  File "C:\Users\samso\Documents\Codex\2026-10-01\files-mentioned-by-the-user-cypher\work\Cypher-master\Cypher-master\tests\test_nested_archive_recursion.py", line 78, in test_full_recursive_chain_zip_to_base64_to_confirmed_flag
+    assert final_state.status == InvestigationStatus.CONFIRMED
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+Traceback (most recent call last):
+  File "C:\Users\samso\Documents\Codex\2026-10-01\files-mentioned-by-the-user-cypher\work\Cypher-master\Cypher-master\tests\_pytest_shim.py", line 89, in run_module
+    func(**kwargs)
+  File "C:\Users\samso\Documents\Codex\2026-10-01\files-mentioned-by-the-user-cypher\work\Cypher-master\Cypher-master\tests\test_sandbox.py", line 32, in test_safe_tool_never_uses_docker_even_if_enabled
+    result = executor.execute("file_identify", "originals/sample.txt")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samso\Documents\Codex\2026-10-01\files-mentioned-by-the-user-cypher\work\Cypher-master\Cypher-master\src\cypher\tools\executor.py", line 230, in execute
+    raise ToolValidationError(f"Tool '{tool_name}' is registered but not installed on this system.")
+cypher.tools.executor.ToolValidationError: Tool 'file_identify' is registered but not installed on this system.
+Traceback (most recent call last):
+  File "C:\Users\samso\Documents\Codex\2026-10-01\files-mentioned-by-the-user-cypher\work\Cypher-master\Cypher-master\tests\_pytest_shim.py", line 89, in run_module
+    func(**kwargs)
+  File "C:\Users\samso\Documents\Codex\2026-10-01\files-mentioned-by-the-user-cypher\work\Cypher-master\Cypher-master\tests\test_sandbox.py", line 125, in test_docker_argv_construction_is_correct
+    assert "originals/sample.txt" in argv
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+Traceback (most recent call last):
+  File "C:\Users\samso\Documents\Codex\2026-10-01\files-mentioned-by-the-user-cypher\work\Cypher-master\Cypher-master\tests\_pytest_shim.py", line 89, in run_module
+    func(**kwargs)
+  File "C:\Users\samso\Documents\Codex\2026-10-01\files-mentioned-by-the-user-cypher\work\Cypher-master\Cypher-master\tests\test_scheduler_prioritization.py", line 116, in test_multilayer_scheduling_reaches_confirmed_with_realistic_model_behavior
+    assert final_state.status == InvestigationStatus.CONFIRMED
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+Traceback (most recent call last):
+  File "C:\Users\samso\Documents\Codex\2026-10-01\files-mentioned-by-the-user-cypher\work\Cypher-master\Cypher-master\tests\_pytest_shim.py", line 89, in run_module
+    func(**kwargs)
+  File "C:\Users\samso\Documents\Codex\2026-10-01\files-mentioned-by-the-user-cypher\work\Cypher-master\Cypher-master\tests\test_specialist_tools.py", line 36, in test_auto_decode_tool_solves_base64_via_registry
+    result = executor.execute("auto_decode_common_encodings", "originals/enc.txt")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samso\Documents\Codex\2026-10-01\files-mentioned-by-the-user-cypher\work\Cypher-master\Cypher-master\src\cypher\tools\executor.py", line 230, in execute
+    raise ToolValidationError(f"Tool '{tool_name}' is registered but not installed on this system.")
+cypher.tools.executor.ToolValidationError: Tool 'auto_decode_common_encodings' is registered but not installed on this system.
+Traceback (most recent call last):
+  File "C:\Users\samso\Documents\Codex\2026-10-01\files-mentioned-by-the-user-cypher\work\Cypher-master\Cypher-master\tests\_pytest_shim.py", line 89, in run_module
+    func(**kwargs)
+  File "C:\Users\samso\Documents\Codex\2026-10-01\files-mentioned-by-the-user-cypher\work\Cypher-master\Cypher-master\tests\test_specialist_tools.py", line 48, in test_auto_decode_rot13_does_not_produce_multiple_conflicting_winners
+    result = executor.execute("auto_decode_common_encodings", "originals/rot.txt")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samso\Documents\Codex\2026-10-01\files-mentioned-by-the-user-cypher\work\Cypher-master\Cypher-master\src\cypher\tools\executor.py", line 230, in execute
+    raise ToolValidationError(f"Tool '{tool_name}' is registered but not installed on this system.")
+cypher.tools.executor.ToolValidationError: Tool 'auto_decode_common_encodings' is registered but not installed on this system.
+Traceback (most recent call last):
+  File "C:\Users\samso\Documents\Codex\2026-10-01\files-mentioned-by-the-user-cypher\work\Cypher-master\Cypher-master\tests\_pytest_shim.py", line 89, in run_module
+    func(**kwargs)
+  File "C:\Users\samso\Documents\Codex\2026-10-01\files-mentioned-by-the-user-cypher\work\Cypher-master\Cypher-master\tests\test_specialist_tools.py", line 93, in test_full_loop_solves_xor_encoded_flag_with_corroboration
+    assert final_state.status == InvestigationStatus.CONFIRMED
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+  PASS  test_ai_resilience.py::test_model_suggested_flag_in_interpretation_is_never_confirmed
+  PASS  test_ai_resilience.py::test_investigation_survives_ollama_completely_unavailable
+  FAIL  test_artifact_recursion.py::test_tool_producing_new_file_is_registered_as_discovered_artifact
+  PASS  test_artifact_recursion.py::test_cycle_guard_prevents_reregistering_the_same_artifact_twice
+  PASS  test_artifact_recursion.py::test_depth_ceiling_is_enforced
+  PASS  test_correlation_persistence.py::test_correlation_ids_are_deterministic_pure_function
+  PASS  test_correlation_persistence.py::test_rebuild_is_idempotent_within_one_process
+  PASS  test_correlation_persistence.py::test_correlation_survives_full_restart_without_duplication
+  PASS  test_correlation_persistence.py::test_new_observation_after_restart_adds_without_disturbing_existing
+  PASS  test_demonstration_workflow.py::test_complete_demonstration_workflow
+  PASS  test_evidence_upload.py::test_upload_registers_hashed_evidence_and_hides_storage_path
+  PASS  test_evidence_upload.py::test_upload_rejects_missing_file_and_bad_investigation
+  PASS  test_evidence_upload.py::test_upload_limits_are_reported
+  PASS  test_evidence_upload.py::test_remote_bind_requires_access_token
+  FAIL  test_executor.py::test_file_identify
+  PASS  test_executor.py::test_unknown_tool_rejected
+  PASS  test_executor.py::test_path_traversal_rejected
+  PASS  test_executor.py::test_missing_file_rejected
+  PASS  test_executor.py::test_extra_args_pattern_enforced
+  FAIL  test_executor.py::test_grep_pattern_finds_flag_shape
+  PASS  test_executor.py::test_tool_that_does_not_accept_extras_rejects_them
+  FAIL  test_final_pass_additions.py::test_pattern_scan_flags_suspicious_symbols_and_flag_shape
+  FAIL  test_final_pass_additions.py::test_pattern_scan_quiet_on_boring_binary
+  FAIL  test_final_pass_additions.py::test_osint_corroboration_links_entity_seen_in_two_evidence_sources
+  PASS  test_final_pass_additions.py::test_elevated_tools_have_tighter_resource_limits_than_default
+  PASS  test_final_pass_additions.py::test_pwntools_probe_correctly_reports_unavailable_without_pwn_package
+  PASS  test_flags.py::test_extractor_finds_candidate
+  PASS  test_flags.py::test_extractor_ignores_non_matching_braces
+  PASS  test_flags.py::test_verifier_confirms_when_found_in_high_relevance_evidence
+  PASS  test_flags.py::test_verifier_refuses_hallucinated_flag_not_in_evidence
+  PASS  test_flags.py::test_verifier_marks_probable_when_low_relevance
+  PASS  test_frontend_serving.py::test_index_html_served_at_root
+  PASS  test_frontend_serving.py::test_js_served_with_correct_content_type
+  PASS  test_frontend_serving.py::test_cors_headers_present_on_api_response
+  PASS  test_frontend_serving.py::test_head_request_matches_get_headers_without_body
+  PASS  test_frontend_serving.py::test_raw_unnormalized_path_traversal_is_blocked
+  PASS  test_frontend_serving.py::test_unknown_path_falls_back_to_index_for_spa_routing
+  PASS  test_investigation_e2e.py::test_full_loop_reaches_confirmed
+  PASS  test_investigation_e2e.py::test_loop_never_confirms_when_flag_absent
+  PASS  test_investigation_platform.py::test_case_manager_create_list_get_are_independent
+  PASS  test_investigation_platform.py::test_get_nonexistent_case_raises_not_found
+  PASS  test_investigation_platform.py::test_evidence_registration_assigns_stable_sequential_ids
+  PASS  test_investigation_platform.py::test_finding_without_evidence_refs_is_refused
+  PASS  test_investigation_platform.py::test_finding_with_evidence_is_created_and_starts_ai_proposed
+  PASS  test_investigation_platform.py::test_human_confirm_and_reject_are_explicit_and_distinct
+  PASS  test_investigation_platform.py::test_timeline_records_real_events_only
+  FAIL  test_investigation_platform.py::test_full_workflow_evidence_to_analysis_to_timeline_without_any_ai
+  PASS  test_investigation_platform_v2.py::test_observation_extraction_is_purely_pattern_based
+  PASS  test_investigation_platform_v2.py::test_observation_store_persists_and_reloads
+  PASS  test_investigation_platform_v2.py::test_correlation_same_value_requires_two_independent_sources
+  PASS  test_investigation_platform_v2.py::test_correlation_co_occurring_within_one_result
+  PASS  test_investigation_platform_v2.py::test_ai_analyst_rejects_finding_with_fabricated_evidence_id
+  PASS  test_investigation_platform_v2.py::test_ai_analyst_accepts_finding_with_real_references
+  PASS  test_investigation_platform_v2.py::test_ai_analyst_survives_total_ai_outage
+  PASS  test_investigation_platform_v2.py::test_real_http_api_end_to_end
+  PASS  test_investigation_security.py::test_case_id_path_traversal_is_rejected
+  PASS  test_investigation_security.py::test_valid_looking_but_wrong_length_id_is_rejected
+  PASS  test_investigation_security.py::test_http_api_rejects_traversal_case_id_with_400_not_500
+  PASS  test_investigation_security.py::test_http_api_rejects_malformed_json_body_gracefully
+  PASS  test_investigation_security.py::test_http_api_rejects_oversized_body
+  PASS  test_investigation_security.py::test_human_decision_on_nonexistent_finding_is_404_not_crash
+  FAIL  test_nested_archive_recursion.py::test_full_recursive_chain_zip_to_base64_to_confirmed_flag
+  FAIL  test_sandbox.py::test_safe_tool_never_uses_docker_even_if_enabled
+  PASS  test_sandbox.py::test_competition_mode_blocks_sandboxed_tool_when_docker_unavailable
+  PASS  test_sandbox.py::test_development_mode_falls_back_to_host_when_docker_unavailable
+  PASS  test_sandbox.py::test_investigation_loop_survives_a_blocked_sandbox_tool
+  FAIL  test_sandbox.py::test_docker_argv_construction_is_correct
+  PASS  test_sandbox.py::test_docker_network_none_by_default_but_bridge_if_tool_requires_network
+  PASS  test_scheduler_prioritization.py::test_hypothesis_board_breaks_ties_by_freshness_not_insertion_order
+  FAIL  test_scheduler_prioritization.py::test_multilayer_scheduling_reaches_confirmed_with_realistic_model_behavior
+  PASS  test_scheduler_prioritization.py::test_budget_exhaustion_with_remaining_pursuable_hypotheses_is_not_yet_found_not_exhausted
+  PASS  test_specialist_tools.py::test_registry_has_expected_specialist_categories
+  FAIL  test_specialist_tools.py::test_auto_decode_tool_solves_base64_via_registry
+  FAIL  test_specialist_tools.py::test_auto_decode_rot13_does_not_produce_multiple_conflicting_winners
+  FAIL  test_specialist_tools.py::test_full_loop_solves_xor_encoded_flag_with_corroboration
+  PASS  test_verifier_hardening.py::test_regex_only_candidate_is_not_verified
+  PASS  test_verifier_hardening.py::test_decoy_xor_candidate_from_single_source_is_not_confirmed
+  PASS  test_verifier_hardening.py::test_properly_evidenced_multilayer_flag_is_confirmed
+  PASS  test_verifier_hardening.py::test_decoy_never_beats_real_flag_in_full_extraction_pass
+  PASS  test_web_tooling.py::test_same_origin_positive_and_negative_cases
+  PASS  test_web_tooling.py::test_assert_authorized_blocks_off_origin_and_allows_on_origin
+  PASS  test_web_tooling.py::test_assert_authorized_with_no_configured_target_blocks_everything
+  PASS  test_web_tooling.py::test_executor_web_tool_blocks_off_origin_fetch
+  PASS  test_web_tooling.py::test_executor_web_tool_real_fetch_on_authorized_origin
+  PASS  test_web_tooling.py::test_llm_supplied_off_origin_url_never_reaches_the_fetcher
+
+71 passed, 14 failed

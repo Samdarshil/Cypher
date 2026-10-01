@@ -1,0 +1,20 @@
+[
+  {
+    "event_id": "T-0001",
+    "timestamp": 1790852847.1488595,
+    "description": "Evidence EVID-0001 (cypher-frontend-verify-sample.txt) registered",
+    "source_ref": "EVID-0001"
+  },
+  {
+    "event_id": "T-0002",
+    "timestamp": 1790852847.2293458,
+    "description": "Analyzed cypher-frontend-verify-sample.txt (EVID-0001) with strings_extract -> E1",
+    "source_ref": "E1"
+  },
+  {
+    "event_id": "T-0003",
+    "timestamp": 1790852847.2325723,
+    "description": "2 observation(s) extracted from strings_extract on EVID-0001",
+    "source_ref": "E1"
+  }
+]

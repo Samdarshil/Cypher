@@ -1,0 +1,11 @@
+{
+  "case_id": "CASE-7a07a309",
+  "name": "Node integration check",
+  "description": "created by verify_frontend_api.mjs",
+  "status": "open",
+  "workspace": ".browser-cases\\CASE-7a07a309",
+  "created_at": 1790852801.6042063,
+  "updated_at": 1790852801.6042063,
+  "evidence_ids": [],
+  "finding_ids": []
+}

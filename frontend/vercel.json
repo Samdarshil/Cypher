@@ -1,0 +1,9 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    { "source": "/public-config", "destination": "https://cypher-api.onrender.com/public-config" },
+    { "source": "/investigations", "destination": "https://cypher-api.onrender.com/investigations" },
+    { "source": "/investigations/:path*", "destination": "https://cypher-api.onrender.com/investigations/:path*" },
+    { "source": "/upload-limits", "destination": "https://cypher-api.onrender.com/upload-limits" }
+  ]
+}

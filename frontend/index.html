@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cypher — Investigation Platform</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app" class="app-shell">
+    <nav class="sidebar" id="sidebar">
+      <div class="brand">
+        <span class="brand-mark">◆</span>
+        <span class="brand-name">CYPHER</span>
+      </div>
+
+      <div class="sidebar-section-label">Workspace</div>
+      <a class="nav-item" data-route="#/dashboard" href="#/dashboard">
+        <span class="nav-icon">▤</span> Dashboard
+      </a>
+      <a class="nav-item" data-route="#/investigations" href="#/investigations">
+        <span class="nav-icon">▣</span> Investigations
+      </a>
+
+      <div class="sidebar-section-label" id="active-case-label" hidden>Active Investigation</div>
+      <div id="active-case-nav" hidden>
+        <a class="nav-item" data-tab="overview" href="#">
+          <span class="nav-icon">◎</span> Overview
+        </a>
+        <a class="nav-item" data-tab="evidence" href="#">
+          <span class="nav-icon">▦</span> Evidence
+        </a>
+        <a class="nav-item" data-tab="analysis" href="#">
+          <span class="nav-icon">▶</span> Analysis
+        </a>
+        <a class="nav-item" data-tab="observations" href="#">
+          <span class="nav-icon">◈</span> Observations
+        </a>
+        <a class="nav-item" data-tab="correlations" href="#">
+          <span class="nav-icon">⬡</span> Correlations
+        </a>
+        <a class="nav-item" data-tab="findings" href="#">
+          <span class="nav-icon">⚑</span> Findings
+        </a>
+        <a class="nav-item" data-tab="ai" href="#">
+          <span class="nav-icon">✦</span> AI Analyst
+        </a>
+        <a class="nav-item" data-tab="timeline" href="#">
+          <span class="nav-icon">≡</span> Timeline
+        </a>
+        <a class="nav-item" data-tab="report" href="#">
+          <span class="nav-icon">▧</span> Report
+        </a>
+      </div>
+
+      <div class="sidebar-footer">
+        <div class="status-dot" id="conn-dot"></div>
+        <span id="conn-label">Connecting…</span>
+      </div>
+    </nav>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div class="topbar-title" id="topbar-title">Dashboard</div>
+        <div class="topbar-actions">
+          <button class="btn btn-ghost" id="cmdk-btn" title="Command palette (Ctrl+K)">⌘K</button>
+          <button class="btn btn-primary" id="new-investigation-btn">+ New Investigation</button>
+        </div>
+      </header>
+      <div class="content-scroll" id="view-root">
+        <!-- views render here -->
+      </div>
+    </main>
+  </div>
+
+  <!-- Command palette -->
+  <div class="cmdk-overlay" id="cmdk-overlay" hidden>
+    <div class="cmdk-panel">
+      <input type="text" id="cmdk-input" placeholder="Type a command… (create investigation, add evidence, run analysis, findings, timeline, report)" autocomplete="off">
+      <div class="cmdk-results" id="cmdk-results"></div>
+    </div>
+  </div>
+
+  <!-- Generic modal (new investigation / add evidence / etc.) -->
+  <div class="modal-overlay" id="modal-overlay" hidden>
+    <div class="modal-panel" id="modal-panel"></div>
+  </div>
+
+  <!-- Toast container -->
+  <div class="toast-stack" id="toast-stack"></div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+[
+  {
+    "observation_id": "OBS-0001",
+    "type": "domain",
+    "value": "example.com",
+    "source_result_id": "E1",
+    "evidence_id": "EVID-0001"
+  },
+  {
+    "observation_id": "OBS-0002",
+    "type": "ipv4",
+    "value": "10.1.2.3",
+    "source_result_id": "E1",
+    "evidence_id": "EVID-0001"
+  }
+]

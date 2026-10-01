@@ -1,0 +1,18 @@
+[
+  {
+    "entity_id": "ENT-0001",
+    "entity_type": "domain",
+    "value": "example.com",
+    "observation_ids": [
+      "OBS-0001"
+    ]
+  },
+  {
+    "entity_id": "ENT-0002",
+    "entity_type": "ipv4",
+    "value": "10.1.2.3",
+    "observation_ids": [
+      "OBS-0002"
+    ]
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "evidence_id": "EVID-0001",
+    "original_name": "cypher-frontend-verify-sample.txt",
+    "stored_path": ".browser-cases\\CASE-897899b6\\evidence\\EVID-0001_cypher-frontend-verify-sample.txt",
+    "size_bytes": 48,
+    "sha256": "9b42e99acdc30ec76a8fe2309e262a090503fd7421b0db95c7b3939e506bd28e",
+    "mime_type": "text/plain",
+    "source": "upload",
+    "ingested_at": 1790852847.146858,
+    "analysis_state": "analyzed",
+    "result_refs": [
+      "E1"
+    ]
+  }
+]

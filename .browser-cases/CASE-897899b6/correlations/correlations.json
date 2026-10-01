@@ -1,0 +1,15 @@
+[
+  {
+    "correlation_id": "CORR-f98fb3b48701",
+    "relationship": "co_occurring",
+    "entity_ids": [
+      "ENT-0001",
+      "ENT-0002"
+    ],
+    "observation_ids": [
+      "OBS-0001",
+      "OBS-0002"
+    ],
+    "reasoning": "domain 'example.com' and ipv4 '10.1.2.3' both appeared in the same tool result (E1)."
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "evidence_id": "EVID-0001",
+    "original_name": "upload-smoke.txt",
+    "stored_path": ".browser-cases\\CASE-43af1cc7\\evidence\\EVID-0001_upload-smoke.txt",
+    "size_bytes": 58,
+    "sha256": "44924be4118abb348327453f0afaa5442a8fc390bca41494d1ae9470afa8d4a8",
+    "mime_type": "text/plain",
+    "source": "browser_upload",
+    "ingested_at": 1790852622.0435128,
+    "analysis_state": "registered",
+    "result_refs": []
+  },
+  {
+    "evidence_id": "EVID-0002",
+    "original_name": "upload-smoke-2.txt",
+    "stored_path": ".browser-cases\\CASE-43af1cc7\\evidence\\EVID-0002_upload-smoke-2.txt",
+    "size_bytes": 71,
+    "sha256": "1afbbfebc610588c11f9a585e6ac3d989f34723b6cbd1924fa7906197b9c49ca",
+    "mime_type": "text/plain",
+    "source": "browser_upload",
+    "ingested_at": 1790853266.0948327,
+    "analysis_state": "registered",
+    "result_refs": []
+  }
+]

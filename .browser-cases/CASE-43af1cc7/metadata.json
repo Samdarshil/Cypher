@@ -1,0 +1,11 @@
+{
+  "case_id": "CASE-43af1cc7",
+  "name": "Upload smoke check",
+  "description": "",
+  "status": "open",
+  "workspace": ".browser-cases\\CASE-43af1cc7",
+  "created_at": 1790852573.9592557,
+  "updated_at": 1790852573.9592557,
+  "evidence_ids": [],
+  "finding_ids": []
+}
